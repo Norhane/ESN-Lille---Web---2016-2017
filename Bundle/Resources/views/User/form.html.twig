@@ -1,0 +1,67 @@
+
+
+<h3>Inscription</h3>
+
+
+<div class="inscription">
+
+  {{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
+
+  {{ form_errors(form) }}
+
+  <div class="form-group"> 
+    {{ form_label(form.pseudo, "Pseudo", {'label_attr': {'class': 'col-sm-2 control-label'}}) }}
+
+    {{ form_errors(form.pseudo) }}
+	
+	<div class="col-sm-10">
+      {{ form_widget(form.pseudo, {'attr': {'class': 'form-control'}}) }}
+    </div>
+  </div>
+  
+  <div class="form-group">
+    {{ form_label(form.mail, "Mail", {'label_attr': {'class': 'col-sm-2 control-label'}}) }}
+
+    {{ form_errors(form.mail) }}
+	
+	<div class="col-sm-10">
+      {{ form_widget(form.mail, {'attr': {'class': 'form-control'}}) }}
+    </div>
+  </div>  
+
+  <div class="form-group">
+    {{ form_label(form.pwd, " ", {'label_attr': {'class': 'col-sm-2 control-label'}}) }}
+
+    {{ form_errors(form.pwd) }}
+	
+	<div class="col-sm-10">
+      {{ form_widget(form.pwd, {'attr': {'class': 'form-control'}}) }}
+    </div>
+  </div>
+  <div class="form-group">
+    {{ form_label(form.country, "Select country", {'label_attr': {'class': 'col-sm-2 control-label'}}) }}
+
+    {{ form_errors(form.country) }}
+	
+	<div class="col-sm-10">
+      {{ form_widget(form.country, {'attr': {'class': 'form-control'}}) }}
+    </div>
+  
+    <div class="form-group">
+	
+	<div class="col-sm-10">
+      {{ form_widget(form.date, {'attr': {'class': 'form-control'}}) }}
+    </div>
+  </div>  
+  
+  </div>
+  
+
+
+
+  {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary'}}) }}
+    
+	
+	{{ form_end(form) }}  
+	
+</div>
