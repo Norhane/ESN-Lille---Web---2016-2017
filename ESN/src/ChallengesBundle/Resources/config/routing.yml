@@ -1,0 +1,8 @@
+challenges_homepage:
+    path:       formulaire/
+    defaults: { _controller: ChallengesBundle:SimpleForm:index }
+
+challenges_view:
+    path:       formulaire/view/{id}
+    defaults: { _controller: ChallengesBundle:SimpleForm:view }
+    requirements: { pseudo: \d* }
