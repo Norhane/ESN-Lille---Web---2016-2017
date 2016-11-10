@@ -3,6 +3,7 @@
 namespace ChallengesBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * SimpleForm
@@ -24,7 +25,9 @@ class SimpleForm
     /**
      * @var string
      *
-     * @ORM\Column(name="pseudo", type="string", length=255, unique=true)
+     * @ORM\Column(name="pseudo", type="string", length=15, unique=true)
+     * @Assert\NotBlank()
+     * @Assert\Length(min=4, minMessage="Le pseudo doit faire plus de {{ limit }} caractères !", max=15, maxMessage="Le pseudo ne peut dépasser {{ limit }} caractères !")
      */
     private $pseudo;
 
@@ -32,6 +35,7 @@ class SimpleForm
      * @var string
      *
      * @ORM\Column(name="mail", type="string", length=255, unique=true)
+     * @Assert\NotBlank()
      */
     private $mail;
 
@@ -39,6 +43,7 @@ class SimpleForm
      * @var string
      *
      * @ORM\Column(name="password", type="string", length=255)
+     * @Assert\Length(min=8, minMessage="Le mot de passe doit faire au moins {{ limit }} caractères !")
      */
     private $password;
 

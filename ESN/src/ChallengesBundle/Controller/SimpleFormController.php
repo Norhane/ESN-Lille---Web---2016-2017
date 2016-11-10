@@ -21,7 +21,7 @@ class SimpleFormController extends Controller {
             $em->persist($simple_form);
             $em->flush();
 
-            return $this->redirectToRoute('challenges_view', array('pseudo' => $simple_form->getPseudo()));
+            return $this->redirectToRoute('challenges_view', array('id' => $simple_form->getId()));
         }
 
         return $this->render('ChallengesBundle:SimpleForm:index.html.twig', array(
@@ -31,12 +31,8 @@ class SimpleFormController extends Controller {
 
     public function viewAction($id) {
        
-        if (!is_a($id, 'integer')) {
-            throw new NotFoundHttpException("Un entier est attendu en lieu et place de \"".$id."\" !");  
-        }            
-
         $em = $this->getDoctrine()->getManager();
-        
+       
         $simple_form = $em->getRepository('ChallengesBundle:SimpleForm')->find($id);
         if (null === $simple_form) {
             throw new NotFoundHttpException("Le pseudo d'id ".$id." n'existe pas.");

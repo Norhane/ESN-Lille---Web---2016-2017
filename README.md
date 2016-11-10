@@ -13,10 +13,16 @@ Tchang #Champion
 	- Vérif des MDP OK
 	- PB de fuseau horaire
 
-Valentin
+Valentin  #Challenger
 - Tutos OC en cours
 - Formulaire
-    Dans les grandes lignes, le formulaire est implémenté.
-    Il manque principalement le deuxième champ pour le mot de passe, 
-permettant de vérifier que l'utilisateur n'a pas fait une éventuelle erreur de saisie.
+    Actuellement :
+            - Entité créée
+            - Formulaire externalisé
+            - Pseudo et mail doivent être différents pour que les saisies soient acceptées
+            - Répétition du mot de passe demandée
+            - Choix du pays selon une sélection
 
+    Manque :
+            - Gestion des erreurs dans certains cas
+            - De meilleures vues
