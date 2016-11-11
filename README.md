@@ -1,5 +1,5 @@
 # ESN-Lille---Web---2016-2017
-Publication de nos essaies informatiques!
+Publication de nos essais informatiques !
 
 # 28 octobre 2016
 
@@ -12,6 +12,7 @@ Tchang #Champion
 	- Adresses mails doivent être différentes
 	- Vérif des MDP OK
 	- PB de fuseau horaire
+
 
 Valentin  #Challenger
 - Tutos OC en cours
@@ -26,3 +27,11 @@ Valentin  #Challenger
     Manque :
             - Gestion des erreurs dans certains cas
             - De meilleures vues
+	   
+	   
+Rémy #Galère
+- Tuto OC en cours
+- Problèmes techniques rencontrés sur le serv, merci Val
+- En galère avec mon entité
+	Manque :
+		- Tout
